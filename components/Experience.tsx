@@ -1,0 +1,49 @@
+import React from "react";
+import { Button } from "./ui/button";
+import Image from "next/image";
+
+const Experience = () => {
+  return (
+    <div className="py-[6rem] padding flex flex-col items-center h-auto  md:h-auto bg-white">
+      <div className="flex flex-col items-center text-center gap-6">
+        <Button
+          variant="outline"
+          className="bg-[#E3CDF4] border-[1px] text-black"
+        >
+          Get Started
+        </Button>
+        <h1 className="md:text-5xl text-2xl max-w-2xl text-black">
+          The World Class work done by our Team
+        </h1>
+      </div>
+
+      <div className="flex md:flex-row flex-col items-center gap-14 py-[3rem]">
+        <div className="flex">
+          <div className="bg-[url('/t1.png')] bg-cover w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6">
+            <div className="text-center text-xl">
+              Chairman <br></br>Daniel Deez
+            </div>
+            <span>
+              <Image src="/logo.png" alt="logo" width={150} height={80} />
+            </span>
+          </div>
+          <Image src="/t3.jpg" alt="t1" width={270} height={450} />
+        </div>
+
+        <div className="flex">
+          <Image src="/t2.png" alt="t1" width={300} height={500} />
+          <div className="bg-[url('/t1.png')] bg-cover w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6">
+            <div className="text-center text-xl">
+              MD, Global <br></br>Daniel Nuts
+            </div>
+            <span>
+              <Image src="/logo.png" alt="logo" width={150} height={80} />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Experience;

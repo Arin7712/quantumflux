@@ -60,8 +60,8 @@ const Services = () => {
             </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-white text-black"/>
-          <CarouselNext className="bg-white text-black"/>
+          <CarouselPrevious className="bg-white text-black md:block hidden"/>
+          <CarouselNext className="bg-white text-black md:block hidden"/>
         </Carousel>
       </div>
     </div>

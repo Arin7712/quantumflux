@@ -34,7 +34,7 @@ const Partners = () => {
         <p className='text-zinc-700'>Someposition</p>
         </div>
         </div>
-        <p className="md:ml-[7.5rem] pt-4 pr-[8rem] md:pr-[8rem] w-[100%] md:w-[70%] md:bg-none bg-[url('/logo2.png')] bg-right bg-no-repeat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        <p className="md:ml-[7.5rem] pt-4 pr-[8rem] md:pr-[8rem] w-[100%] md:w-[70%] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
       </div>
     </div>
     <div className='flex md:flex-nowrap flex-wrap gap-[2rem] md:gap-[14rem] items-center w-full md:pt-0 pt-[6rem]'>

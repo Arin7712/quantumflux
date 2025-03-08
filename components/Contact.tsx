@@ -10,7 +10,7 @@ const manrope = Manrope({
 
 const Contact = () => {
   return (
-<div className="padding flex md:flex-row flex-col items-stretch justify-between py-[6rem] md:gap-6 gap-[4rem] border-t-[1px] border-t-zinc-700">
+<div className="padding flex md:flex-row flex-col items-start md:items-stretch justify-between py-[6rem] md:gap-6 gap-[4rem] border-t-[1px] border-t-zinc-700">
       <div
         className={`${manrope.className} text-white w-full md:w-[60%] flex flex-col gap-[3rem]`}
       >
@@ -62,7 +62,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="bg-[url('/t1.png')] bg-cover flex-1 flex justify-between flex-col rounded-xl p-6">
+      <div className="bg-[url('/t1.png')] bg-cover md:flex-1 flex justify-between flex-col rounded-xl p-6 md:w-auto w-full md:h-auto h-[20rem]">
       <div>
         <Image src='/logo.png' alt='logo' width={200} height={80} />
       </div>

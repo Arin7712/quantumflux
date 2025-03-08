@@ -38,7 +38,7 @@ const Services = () => {
         </h1>
       </div>
 
-      <div className="mt-10 flex justify-center md:px-[4rem] px-[2rem]">
+      <div className="mt-10 flex justify-center md:px-[4rem] px-0">
         <Carousel className="md:w-[100%] w-[80%]">
           <CarouselContent>
             {servicesItems.map((item, index) => (

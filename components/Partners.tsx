@@ -19,7 +19,7 @@ const Partners = () => {
       <div className='space-y-6'>
       <Button
           variant="outline"
-          className="bg-[#E3CDF4] border-[1px] text-black px-12"
+          className="bg-[#E3CDF4] border-[1px] text-black px-12 hover:bg-[#E3CDF4] hover:text-black"
         >
           Partners
         </Button>

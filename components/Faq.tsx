@@ -21,7 +21,7 @@ const Faq = () => {
 
   return (
     <div className='padding py-[6rem]'>
-      <div className='md:text-5xl text-3xl'>
+      <div className={`md:text-5xl text-3xl ${manrope.className} font-bold`}>
         FAQ
       </div>
       <Accordion type="single" collapsible className={`mt-6 ${manrope.className}`}>

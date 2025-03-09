@@ -1,5 +1,9 @@
+'use client'
+
 import Image from "next/image";
-import Link from "next/link";
+
+import * as Scroll from "react-scroll";
+
 
 import { Manrope } from "next/font/google";
 import { Button } from "./ui/button";
@@ -21,7 +25,7 @@ const Hero = () => {
             <Image src="/logo.png" alt="logo" width={200} height={200} />
           </div>
           <div>
-            <Link href='/contact' className={manrope.className}>Contact Us</Link>
+            <Scroll.Link to='contact' smooth={true} spy={true} offset={-50} className={`${manrope.className} hover:cursor-pointer`}>Contact Us</Scroll.Link>
           </div>
         </nav>
 
@@ -72,12 +76,14 @@ const Hero = () => {
         <h1 className="md:text-3xl text-2xl max-w-2xl">"Transform ideas into innovative software and wesbites that drive success."</h1>
         <div className="flex md:flex-row flex-col md:gap-0 gap-6 items-center justify-between">
           <p className="text-sm">"Transform ideas into innovative software and wesbites that drive success."</p>
+          <Scroll.Link to='services' smooth={true} spy={true} offset={-50}>
           <Button className="bg-white text-[#2C0A3F] hover:bg-white hover:cursor-pointer md:text-sm text-xs">
             <span className={`${manrope.className} font-semibold`}>
             Get Started
             </span>
             <ArrowRight/>
           </Button>
+          </Scroll.Link>
         </div>
       </div>
     </div>

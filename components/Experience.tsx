@@ -1,6 +1,12 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { Manrope } from "next/font/google";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const Experience = () => {
   return (
@@ -8,16 +14,16 @@ const Experience = () => {
       <div className="flex flex-col items-center text-center gap-6">
         <Button
           variant="outline"
-          className="bg-[#E3CDF4] border-[1px] text-black"
+          className="bg-[#E3CDF4] border-[1px] text-black hover:bg-[#E3CDF4] hover:text-black"
         >
-          Get Started
+          Experience
         </Button>
-        <h1 className="md:text-5xl text-2xl max-w-2xl text-black">
+        <h1 className={`md:text-5xl text-2xl max-w-2xl text-black font-bold ${manrope.className}`}>
           The World Class work done by our Team
         </h1>
       </div>
 
-      <div className="flex md:flex-row flex-col items-center gap-14 py-[3rem]">
+      <div className={`flex md:flex-row flex-col items-center gap-14 py-[3rem] ${manrope.className}`}>
         <div className="flex">
           <div className="bg-[url('/t1.png')] bg-cover w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6">
             <div className="text-center text-xl">

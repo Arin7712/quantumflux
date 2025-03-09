@@ -18,18 +18,33 @@ const Experience = () => {
         >
           Experience
         </Button>
-        <h1 className={`md:text-5xl text-2xl max-w-2xl text-black font-bold ${manrope.className}`}>
+        <h1
+          className={`md:text-5xl text-2xl max-w-2xl text-black font-bold ${manrope.className}`}
+        >
           The World Class work done by our Team
         </h1>
       </div>
 
-      <div className={`flex md:flex-row flex-col items-center gap-14 py-[3rem] ${manrope.className}`}>
+      <div
+        className={`flex md:flex-row flex-col items-center gap-14 py-[3rem] ${manrope.className}`}
+      >
         <div className="flex">
-          <div className="bg-[url('/t1.png')] bg-cover w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6">
-            <div className="text-center text-xl">
+          <div className="relative w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6 overflow-hidden">
+            {/* Background Video */}
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover z-0"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="/bgvid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="text-center text-xl relative">
               Chairman <br></br>Daniel Deez
             </div>
-            <span>
+            <span className="relative">
               <Image src="/logo.png" alt="logo" width={150} height={80} />
             </span>
           </div>
@@ -38,11 +53,22 @@ const Experience = () => {
 
         <div className="flex">
           <Image src="/t2.png" alt="t1" width={300} height={500} />
-          <div className="bg-[url('/t1.png')] bg-cover w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6">
-            <div className="text-center text-xl">
+          <div className="relative w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6 overflow-hidden">
+            {/* Background Video */}
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover z-0"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="/bgvid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>{" "}
+            <div className="text-center text-xl relative">
               MD, Global <br></br>Daniel Nuts
             </div>
-            <span>
+            <span className="relative">
               <Image src="/logo.png" alt="logo" width={150} height={80} />
             </span>
           </div>

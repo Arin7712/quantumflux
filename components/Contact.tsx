@@ -99,11 +99,23 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="bg-[url('/t1.png')] bg-cover md:flex-1 flex justify-between flex-col rounded-xl p-6 md:w-auto w-full md:h-auto h-[20rem]">
-      <div>
+      <div className="relative md:flex-1 flex justify-between flex-col rounded-xl p-6 md:w-auto w-full md:h-auto h-[20rem] overflow-hidden">
+  
+  {/* Background Video */}
+  <video 
+    className="absolute top-0 left-0 w-full h-full object-cover z-0"
+    autoPlay
+    loop
+    muted
+    playsInline
+  >
+    <source src="/bgvid.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+      <div className="relative">
         <Image src='/logo.png' alt='logo' width={200} height={80} />
       </div>
-      <div className="flex flex-col gap-4 items-end">
+      <div className="flex flex-col gap-4 items-end relative">
                       <p>Quickest Contact With Us</p>
                       <ul className="flex gap-6">
                           <li className='hover:cursor-pointer'>

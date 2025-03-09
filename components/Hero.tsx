@@ -19,8 +19,19 @@ const manrope = Manrope({
 const Hero = () => {
   return (
     <div className="flex flex-col h-auto md:h-screen">
-      <div className="md:h-[60%] h-[30rem] flex flex-col justify-between text-white bg-[url('/bg.png')] bg-cover bg-center padding">
-        <nav className="flex items-center justify-between w-full py-6">
+<div className="md:h-[60%] h-[30rem] flex flex-col justify-between text-white relative">
+  <video 
+    className="absolute z-0 top-0 left-0 w-full h-full object-cover"
+    autoPlay
+    loop
+    muted
+    playsInline
+  >
+    <source src="/bgvid.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+        <nav className="flex items-center justify-between w-full py-6 relative z-10 padding">
           <div className="inline-block">
             <Image src="/logo.png" alt="logo" width={200} height={200} />
           </div>
@@ -29,7 +40,7 @@ const Hero = () => {
           </div>
         </nav>
 
-        <div className="flex md:flex-row flex-col justify-between md:items-center w-full pb-6 gap-10">
+        <div className="flex md:flex-row flex-col justify-between md:items-center w-full pb-6 gap-10 relative padding">
             <div className="md:text-3xl text-2xl md:max-w-lg max-w-[50%]">
                 Innovative Solutions For Dynamic Industries
             </div>

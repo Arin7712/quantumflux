@@ -32,7 +32,7 @@ const Services = () => {
   
 
   return (
-    <div className="md:py-[8rem] py-[4rem] padding flex flex-col items-center justify-center">
+    <div className="md:py-[8rem] py-[6rem] padding flex flex-col items-center justify-center h-auto">
       <div className="flex flex-col items-center text-center gap-6">
         <Button
           variant="outline"

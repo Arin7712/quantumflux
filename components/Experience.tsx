@@ -52,7 +52,7 @@ const Experience = () => {
         </div>
 
         <div className="flex">
-          <Image src="/t2.png" alt="t1" width={300} height={500} />
+          <Image src="/t2.png" alt="t1" width={270} height={450} />
           <div className="relative w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6 overflow-hidden">
             {/* Background Video */}
             <video

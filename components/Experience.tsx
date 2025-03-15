@@ -29,48 +29,29 @@ const Experience = () => {
         className={`flex md:flex-row flex-col items-center gap-14 py-[3rem] ${manrope.className}`}
       >
         <div className="flex md:flex-row flex-col">
-          <div className="relative md:w-[300px] w-full h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6 overflow-hidden">
+          <div className="bg-[url('/bg.png')] bg-no-repeat bg-cover relative md:w-[300px] w-full h-[200px] md:h-[462px] rounded-lg flex flex-row md:flex-col items-center justify-between px-4 py-6 overflow-hidden">
             {/* Background Video */}
-            <video
-              className="absolute top-0 left-0 w-full h-full object-cover z-0"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src="/bgvid.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+
             <div className="text-center text-xl relative">
               Chairman <br></br>Daniel Deez
             </div>
-            <span className="relative">
+            <span className="relative order-[-1] md:order-1">
               <Image src="/logo.png" alt="logo" width={150} height={80} />
             </span>
           </div>
-          <Image src="/t3.jpg" alt="t1" width={270} height={450} className="w-[500px] md:hidden block"/>
+          <Image src="/card1.jpg" alt="t1" width={270} height={450} className="w-[500px] h-[250px]  md:hidden block rounded-lg"/>
           <Image src="/t3.jpg" alt="t1" width={270} height={450} className=" md:block hidden"/>
         </div>
 
         <div className="flex md:flex-row flex-col ">
-          <Image src="/t2.png" alt="t1" width={270} height={450} className="w-[500px] md:hidden block"/>
+          <Image src="/t4.png" alt="t1" width={270} height={450} className="w-[500px] md:hidden block"/>
           <Image src="/t2.png" alt="t1" width={270} height={450} className=" md:block hidden"/>
-          <div className="relative md:w-[300px] w-full md:order-1 order-[-1] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6 overflow-hidden">
-            {/* Background Video */}
-            <video
-              className="absolute top-0 left-0 w-full h-full object-cover z-0"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src="/bgvid.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>{" "}
+          <div className="bg-[url('/bg.png')] bg-no-repeat bg-cover relative md:w-[300px] w-full md:order-1 order-[-1] h-[200px] md:h-[462px] rounded-lg flex flex-row md:flex-col items-center justify-between px-4 py-6 overflow-hidden">
+
             <div className="text-center text-xl relative">
               MD, Global <br></br>Daniel Nuts
             </div>
-            <span className="relative">
+            <span className="relative order-[-1] md:order-1">
               <Image src="/logo.png" alt="logo" width={150} height={80} />
             </span>
           </div>

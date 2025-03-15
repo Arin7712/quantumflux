@@ -28,8 +28,8 @@ const Experience = () => {
       <div
         className={`flex md:flex-row flex-col items-center gap-14 py-[3rem] ${manrope.className}`}
       >
-        <div className="flex">
-          <div className="relative w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6 overflow-hidden">
+        <div className="flex md:flex-row flex-col">
+          <div className="relative md:w-[300px] w-full h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6 overflow-hidden">
             {/* Background Video */}
             <video
               className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -48,12 +48,14 @@ const Experience = () => {
               <Image src="/logo.png" alt="logo" width={150} height={80} />
             </span>
           </div>
-          <Image src="/t3.jpg" alt="t1" width={270} height={450} />
+          <Image src="/t3.jpg" alt="t1" width={270} height={450} className="w-[500px] md:hidden block"/>
+          <Image src="/t3.jpg" alt="t1" width={270} height={450} className=" md:block hidden"/>
         </div>
 
-        <div className="flex">
-          <Image src="/t2.png" alt="t1" width={270} height={450} />
-          <div className="relative w-[300px] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6 overflow-hidden">
+        <div className="flex md:flex-row flex-col ">
+          <Image src="/t2.png" alt="t1" width={270} height={450} className="w-[500px] md:hidden block"/>
+          <Image src="/t2.png" alt="t1" width={270} height={450} className=" md:block hidden"/>
+          <div className="relative md:w-[300px] w-full md:order-1 order-[-1] h-[462px] rounded-lg flex flex-col items-center justify-between px-4 py-6 overflow-hidden">
             {/* Background Video */}
             <video
               className="absolute top-0 left-0 w-full h-full object-cover z-0"

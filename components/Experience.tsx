@@ -29,7 +29,7 @@ const Experience = () => {
         className={`flex md:flex-row flex-col items-center gap-14 py-[3rem] ${manrope.className}`}
       >
         <div className="flex md:flex-row flex-col">
-          <div className="bg-[url('/bg.png')] bg-no-repeat bg-cover relative md:w-[300px] w-full h-[200px] md:h-[462px] rounded-lg flex flex-row md:flex-col items-center justify-between px-4 py-6 overflow-hidden">
+          <div className="bg-[url('/bg.webp')] bg-no-repeat bg-cover relative md:w-[300px] w-full h-[200px] md:h-[462px] rounded-lg flex flex-row md:flex-col items-center justify-between px-4 py-6 overflow-hidden">
             {/* Background Video */}
 
             <div className="text-center text-md md:text-xl relative">
@@ -46,7 +46,7 @@ const Experience = () => {
         <div className="flex md:flex-row flex-col ">
           <Image src="/t4.png" alt="t1" width={270} height={450} className="w-[500px] md:hidden block"/>
           <Image src="/t2.png" alt="t1" width={270} height={450} className=" md:block hidden"/>
-          <div className="bg-[url('/bg.png')] bg-no-repeat bg-cover relative md:w-[300px] w-full md:order-1 order-[-1] h-[200px] md:h-[462px] rounded-lg flex flex-row md:flex-col items-center justify-between px-4 py-6 overflow-hidden">
+          <div className="bg-[url('/bg.webp')] bg-no-repeat bg-cover relative md:w-[300px] w-full md:order-1 order-[-1] h-[200px] md:h-[462px] rounded-lg flex flex-row md:flex-col items-center justify-between px-4 py-6 overflow-hidden">
 
             <div className="text-center text-md nd:text-xl relative">
               MD, Global <br></br>Daniel Nuts

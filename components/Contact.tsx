@@ -106,7 +106,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="relative md:flex-1 flex justify-between flex-col rounded-xl p-6 md:w-auto w-full md:h-auto h-[20rem] overflow-hidden bg-[url('/bg.png')] bg-no-repeat bg-cover">
+      <div className="relative md:flex-1 flex justify-between flex-col rounded-xl p-6 md:w-auto w-full md:h-auto h-[20rem] overflow-hidden bg-[url('/bg.webp')] bg-no-repeat bg-cover">
 
         <div className="relative">
           <Image src="/logo.png" alt="logo" width={200} height={80} />

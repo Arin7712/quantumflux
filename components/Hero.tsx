@@ -19,8 +19,8 @@ const manrope = Manrope({
 const Hero = () => {
   return (
     <div className="flex flex-col h-auto md:h-screen">
-<div className="md:h-[60%] h-[30rem] flex flex-col justify-between text-white relative">
-  <video 
+<div className="md:h-[60%] h-[30rem] flex flex-col justify-between text-white relative bg-[url('/bg.webp')] bg-cover bg-no-repeat">
+  {/*<video 
     className="absolute z-0 top-0 left-0 w-full h-full object-cover"
     autoPlay
     loop
@@ -29,7 +29,7 @@ const Hero = () => {
   >
     <source src="/bgvid4.webm" type="video/mp4" />
     Your browser does not support the video tag.
-  </video>
+  </video>*/}
 
         <nav className="flex items-center justify-between w-full py-6 relative z-10 padding">
           <div className="inline-block">
@@ -84,8 +84,8 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col gap-10 md:gap-20 pt-10 pb-20 padding md:text-start text-center border-b-[1px] border-b-zinc-700">
-        <h1 className="md:text-3xl text-2xl max-w-2xl">"Transform ideas into innovative software and wesbites that drive success."</h1>
-        <div className="flex md:flex-row flex-col md:gap-0 gap-6 items-center justify-between">
+        <h1 className="md:text-3xl text-2xl max-w-2xl hidden">"Transform ideas into innovative software and wesbites that drive success."</h1>
+        <div className="flex md:flex-row flex-col md:gap-0 gap-6 items-center justify-between md:pt-[10rem] pt-[2rem]">
           <p className="text-sm">"Transform ideas into innovative software and wesbites that drive success."</p>
           <Scroll.Link to='services' smooth={true} spy={true} offset={-50}>
           <Button className="bg-white text-[#2C0A3F] hover:bg-white hover:cursor-pointer md:text-sm text-xs">

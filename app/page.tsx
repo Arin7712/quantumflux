@@ -19,7 +19,7 @@ export default function Home() {
           <Services />
         </section>
       </Element>
-      <Experience />
+      {/* <Experience /> */}
       <Tech />
       {/* <Partners/> */}
       <Faq />

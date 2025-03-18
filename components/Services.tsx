@@ -45,9 +45,9 @@ const Services = () => {
         </h1>
       </div>
 
-      <div className="mt-10 flex justify-center md:px-[4rem] px-0">
+      <div className="mt-10 flex justify-center md:px-[4rem] px-0 w-screen md:w-auto">
         <Carousel className="md:w-[100%] w-[80%]">
-          <CarouselContent className="px-10 md:px-0">
+          <CarouselContent className="px-4 md:px-0">
             {servicesItems.map((item, index) => (
             <CarouselItem className="md:basis-1/3 basis-1/1" key={index}>
               <Card className={`${manrope.className} bg-transparent border-zinc-700`}>
@@ -57,7 +57,14 @@ const Services = () => {
                     alt="bg"
                     width={500}
                     height={500}
-                    className="rounded-xl"
+                    className="rounded-xl md:block hidden"
+                  />
+                  <Image
+                    src={item.img}
+                    alt="bg"
+                    width={500}
+                    height={500}
+                    className="rounded-xl md:hidden block"
                   />
                   <p className="px-5 py-4 text-md w-3/4">
                     {item.title}

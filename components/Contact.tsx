@@ -47,7 +47,7 @@ const Contact = () => {
         <p className="pt-[1rem] font-light">
           "Get in touch with us – we’re here to help!"
         </p>
-        <div className="flex md:gap-[8rem] gap-[2rem] items-center">
+        <div className="flex md:gap-[8rem] gap-6 items-center">
           <div>
             <h1 className="text-sm text-neutral-400">Phone</h1>
             <a className="md:text-sm text-xs" href="tel:+7066040014">+91-7066040014</a>

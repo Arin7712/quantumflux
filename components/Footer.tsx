@@ -27,7 +27,7 @@ const Footer = () => {
       };
 
   return (
-    <div className={`padding2 ${manrope.className}  py-[6rem] border-t-[1px] border-t-zinc-700 w-screen md:w-auto`}>
+    <div className={`padding2 ${manrope.className} py-[3rem]  md:py-[6rem] border-t-[1px] border-t-zinc-700 w-screen md:w-auto`}>
     
     <div className='flex md:flex-row flex-col justify-between'>
       <div>

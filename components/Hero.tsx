@@ -10,6 +10,7 @@ import { Button } from "./ui/button";
 
 import {ArrowRight} from "lucide-react";
 import React from "react";
+import Link from "next/link";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ const Hero = () => {
             <div className="flex flex-col gap-4 items-end md:items-center">
                 <p>Quickest Contact With Us</p>
                 <ul className="flex gap-6">
+                  <Link href='https://www.instagram.com/quantumfluxtechnology?igsh=MWFlaGNic3F1MWN0bQ=='>
                     <li className='hover:cursor-pointer'>
                     <Image
                     src='/instagram.svg'
@@ -55,6 +57,9 @@ const Hero = () => {
                     height={20}
                     />
                     </li>
+                  </Link>
+                  <Link href='https://www.linkedin.com/company/quantumflux-technology-pvt-ltd/about/'>
+
                     <li className='hover:cursor-pointer'>
                     <Image
                     src='/linkedin.svg'
@@ -63,31 +68,16 @@ const Hero = () => {
                     height={20}
                     />
                     </li>
-                    <li className='hover:cursor-pointer'>
-                    <Image
-                    src='/facebook.svg'
-                    alt='instagram'
-                    width={20}
-                    height={20}
-                    />
-                    </li>
-                    <li className='hover:cursor-pointer'>
-                    <Image
-                    src='/twitter.svg'
-                    alt='instagram'
-                    width={20}
-                    height={20}
-                    />
-                    </li>
+                  </Link>
                 </ul>
             </div>
         </div>
       </div>
       <div className="flex flex-col gap-10 md:gap-20 pt-10 pb-20 padding md:text-start text-center border-b-[1px] border-b-zinc-700">
-        <h1 className="md:text-3xl text-2xl max-w-2xl hidden">"Transform ideas into innovative software and wesbites that drive success."</h1>
-        <div className="flex md:flex-row flex-col md:gap-0 gap-6 items-center justify-between md:pt-[10rem] pt-[2rem]">
-          <p className="text-sm">"Transform ideas into innovative software and wesbites that drive success."</p>
-          <Scroll.Link to='services' smooth={true} spy={true} offset={-50}>
+        <h1 className="md:text-3xl text-2xl max-w-2xl ">"Transform ideas into innovative software and wesbites that drive success."</h1>
+        <div className="flex md:flex-row flex-col md:gap-0 gap-6 items-center justify-between md:pt-0 pt-[2rem]">
+          <p className="text-sm">"We are there to provide the best software solution for your idea"</p>
+          <Scroll.Link to='contact' smooth={true} spy={true} offset={-50}>
           <Button className="bg-white text-[#2C0A3F] hover:bg-white hover:cursor-pointer md:text-sm text-xs">
             <span className={`${manrope.className} font-semibold`}>
             Get Started

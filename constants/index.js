@@ -1,19 +1,29 @@
 export const servicesItems = [
   {
-    img: "/mockup1.png",
+    img: "/f1.png",
     title:
-      '"Transform ideas into innovative software and wesbites that drive success."',
+      'ERP Software',
   },
   {
-    img: "/mockup1.png",
+    img: "/f2.png",
     title:
-      '"Transform ideas into innovative software and wesbites that drive success."',
+      'LMS Software',
   },
   {
-    img: "/mockup1.png",
+    img: "/f6.png",
     title:
-      '"Transform ideas into innovative software and wesbites that drive success.',
+      'Desktop App',
   },
+  {
+    img: "/f4.png",
+    title:
+      'Android App',
+  },
+  {
+    img: "/f5.png",
+    title:
+      'E-Commerce Website',
+  }
 ];
 
 export const faqItems = [
@@ -60,16 +70,12 @@ export const navItems = [
         href: '#'
     },
     {
-        title: 'About',
-        href: '#'
-    },
-    {
         title: 'Services',
         href: '#'
     },
     {
-        title: 'Experience',
-        href: '#'
+      title: 'Technologies',
+      href: '#'
     },
     {
         title: 'Contact',
@@ -79,15 +85,15 @@ export const navItems = [
 
 export const contactItems = [
     {
-        title: '123456789',
+        title: '+91-7066040014',
         href: '#'
     },
     {
-        title: 'info@quantumflux.com',
+        title: 'quantumfluxtechnology@gmail.com',
         href: '#'
     },
     {
-        title: '123 Main Street, Anytown, USA',
+        title: 'Pune, India',
     }
 ]
 

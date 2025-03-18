@@ -34,12 +34,12 @@ const Services = () => {
   return (
     <div className="md:py-[8rem] py-[4rem] padding flex flex-col items-center justify-center h-auto">
       <div className="flex flex-col items-center text-center gap-6">
-        <Button
+        {/*<Button
           variant="outline"
           className="bg-transparent border-[1px] border-[#8606E6] text-[#8606E6] hover:bg-transparent hover:text-[#8606E6]"
         >
           Get Started
-        </Button>
+        </Button>*/}
         <h1 className={`md:text-5xl text-2xl max-w-2xl font-bold ${manrope.className}`}>
           Our Cutting Edge Development And Execution
         </h1>
@@ -47,7 +47,7 @@ const Services = () => {
 
       <div className="mt-10 flex justify-center md:px-[4rem] px-0">
         <Carousel className="md:w-[100%] w-[80%]">
-          <CarouselContent>
+          <CarouselContent className="px-10 md:px-0">
             {servicesItems.map((item, index) => (
             <CarouselItem className="md:basis-1/3 basis-1/1" key={index}>
               <Card className={`${manrope.className} bg-transparent border-zinc-700`}>

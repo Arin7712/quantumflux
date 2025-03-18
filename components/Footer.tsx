@@ -8,6 +8,10 @@ import { Manrope } from 'next/font/google';
 import { Button } from './ui/button';
 import { ArrowUp } from 'lucide-react';
 
+import * as Scroll from "react-scroll";
+import Link from 'next/link';
+
+
 const manrope = Manrope({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -34,7 +38,9 @@ const Footer = () => {
             <h1>Quick Links</h1>
             <ul className='flex flex-col gap-3'>
                 {navItems.map((item, index) => (
-                    <li key={index} className='text-zinc-500 text-xs hover:text-white transition-all duration-300 hover:cursor-pointer'>{item.title}</li>
+                  <Scroll.Link key={index}  to={item.title.toLowerCase()} smooth={true} spy={true} offset={-50} className={`${manrope.className} hover:cursor-pointer`}>
+                    <li className='text-zinc-500 text-xs hover:text-white transition-all duration-300 hover:cursor-pointer'>{item.title}</li>
+                    </Scroll.Link>
                 ))}
             </ul>
         </div>
@@ -49,45 +55,35 @@ const Footer = () => {
         <div className='flex flex-col gap-6 ml-0 md:ml-[6rem] mt-4 md:mt-0'>
             <h1>Quick Contact With Us</h1>
             <ul className="flex gap-6">
-                                <li className='hover:cursor-pointer'>
-                                <Image
-                                src='/instagram.svg'
-                                alt='instagram'
-                                width={15}
-                                height={15}
-                                />
-                                </li>
-                                <li className='hover:cursor-pointer'>
-                                <Image
-                                src='/linkedin.svg'
-                                alt='instagram'
-                                width={15}
-                                height={15}
-                                />
-                                </li>
-                                <li className='hover:cursor-pointer'>
-                                <Image
-                                src='/facebook.svg'
-                                alt='instagram'
-                                width={15}
-                                height={15}
-                                />
-                                </li>
-                                <li className='hover:cursor-pointer'>
-                                <Image
-                                src='/twitter.svg'
-                                alt='instagram'
-                                width={15}
-                                height={15}
-                                />
-                                </li>
+            <Link href='https://www.instagram.com/quantumfluxtechnology?igsh=MWFlaGNic3F1MWN0bQ=='>
+                    <li className='hover:cursor-pointer'>
+                    <Image
+                    src='/instagram.svg'
+                    alt='instagram'
+                    width={20}
+                    height={20}
+                    />
+                    </li>
+                  </Link>
+                                <Link href='https://www.linkedin.com/company/quantumflux-technology-pvt-ltd/about/'>
+
+                    <li className='hover:cursor-pointer'>
+                    <Image
+                    src='/linkedin.svg'
+                    alt='instagram'
+                    width={20}
+                    height={20}
+                    />
+                    </li>
+                  </Link>
+                                
                             </ul>
         </div>
       </div>
     </div>
     <div className='flex justify-between items-center mt-[6rem]'>
                 <p className='md:text-sm text-xs text-zinc-500'>    
-                2025 Quantumflux technologies all rights reserved
+                © 2025 Quantumflux Technology private limited all rights reserved
                 </p>
                 <Button onClick={scrollToTop} className='bg-transparent  hidden md:flex items-center gap-2 hover:bg-transparent hover:cursor-pointer'>
 Back to top

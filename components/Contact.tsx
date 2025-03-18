@@ -5,6 +5,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { toast } from "sonner";
+import Link from "next/link";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -49,15 +50,15 @@ const Contact = () => {
         <div className="flex md:gap-[8rem] gap-[2rem] items-center">
           <div>
             <h1 className="text-sm text-neutral-400">Phone</h1>
-            <p className="md:text-sm text-xs">+91-1234567890</p>
+            <a className="md:text-sm text-xs" href="tel:+7066040014">+91-7066040014</a>
           </div>
           <div>
             <h1 className="text-sm text-neutral-400">Email</h1>
-            <p className="md:text-sm text-xs">info@quantumflux.com</p>
+            <a href="mailto:quantumfluxtechnology@gmail.com" className="md:text-sm text-xs">quantumfluxtechnology@gmail.com</a>
           </div>
           <div>
             <h1 className="text-sm text-neutral-400">Address</h1>
-            <p className="md:text-sm text-xs">123 Main Street, Anytown, USA</p>
+            <p className="md:text-sm text-xs">Pune, India</p>
           </div>
         </div>
         <div className="text-3xl font-light">Contact Us !</div>
@@ -114,38 +115,28 @@ const Contact = () => {
         <div className="flex flex-col gap-4 items-end relative">
           <p>Quickest Contact With Us</p>
           <ul className="flex gap-6">
-            <li className="hover:cursor-pointer">
-              <Image
-                src="/instagram.svg"
-                alt="instagram"
-                width={20}
-                height={20}
-              />
-            </li>
-            <li className="hover:cursor-pointer">
-              <Image
-                src="/linkedin.svg"
-                alt="instagram"
-                width={20}
-                height={20}
-              />
-            </li>
-            <li className="hover:cursor-pointer">
-              <Image
-                src="/facebook.svg"
-                alt="instagram"
-                width={20}
-                height={20}
-              />
-            </li>
-            <li className="hover:cursor-pointer">
-              <Image
-                src="/twitter.svg"
-                alt="instagram"
-                width={20}
-                height={20}
-              />
-            </li>
+          <Link href='https://www.instagram.com/quantumfluxtechnology?igsh=MWFlaGNic3F1MWN0bQ=='>
+                    <li className='hover:cursor-pointer'>
+                    <Image
+                    src='/instagram.svg'
+                    alt='instagram'
+                    width={20}
+                    height={20}
+                    />
+                    </li>
+                  </Link>
+                                <Link href='https://www.linkedin.com/company/quantumflux-technology-pvt-ltd/about/'>
+
+                    <li className='hover:cursor-pointer'>
+                    <Image
+                    src='/linkedin.svg'
+                    alt='instagram'
+                    width={20}
+                    height={20}
+                    />
+                    </li>
+                  </Link>
+          
           </ul>
         </div>
       </div>

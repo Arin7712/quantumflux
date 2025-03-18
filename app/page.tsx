@@ -13,16 +13,24 @@ import { Element } from "react-scroll";
 export default function Home() {
   return (
     <div className="bg-[#151515]">
-      <Hero />
+      <Element name="home">
+        <section id="home">
+          <Hero />
+        </section>
+      </Element>
       <Element name="services">
         <section id="services">
           <Services />
         </section>
       </Element>
       {/* <Experience /> */}
-      <Tech />
+      <Element name="technologies">
+        <section id="technologies">
+          <Tech />
+        </section>
+        </Element>
       {/* <Partners/> */}
-      <Faq />
+      {/* <Faq /> */}
       <Element name="contact">
         <section id="contact">
           <Contact />

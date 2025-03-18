@@ -49,6 +49,10 @@
   .padding {
     @apply md:px-[4rem] px-[2rem]
   }
+
+  .padding2 {
+    @apply md:px-[4rem] px-[3rem] 
+  }
 }
 
 :root {

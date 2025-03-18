@@ -55,9 +55,16 @@ const Services = () => {
                   <Image
                     src={item.img}
                     alt="bg"
+                    width={500}
+                    height={500}
+                    className="rounded-xl md:block hidden"
+                  />
+                  <Image
+                    src={item.img}
+                    alt="bg"
                     width={1000}
                     height={500}
-                    className="rounded-xl"
+                    className="rounded-xl md:hidden block"
                   />
                   <p className="px-5 py-4 text-md w-3/4">
                     {item.title}

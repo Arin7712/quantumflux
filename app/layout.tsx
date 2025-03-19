@@ -27,7 +27,7 @@ export default function RootLayout({
         <meta name="keywords" content="ERP Software, CRM Software, Desktop App, Android App, Websites, E-commerce Websites" />
         <meta property="og:title" content="Quantumflux Technology" />
         <meta property="og:description" content="Transform ideas into innovative software and wesbites that drive success." />
-        <meta property="og:image" content="/bg.webp" />
+        <meta property="og:image" content="https://quantumflux-seven.vercel.app/bg.webp" />
         {/* <meta property="og:url" content="https://yourwebsite.com" /> */}
         {/* <meta name="twitter:card" content="summary_large_image" /> */}
       </Head>

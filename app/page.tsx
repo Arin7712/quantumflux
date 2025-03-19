@@ -28,7 +28,7 @@ export default function Home() {
         <section id="technologies">
           <Tech />
         </section>
-        </Element>
+      </Element>
       {/* <Partners/> */}
       {/* <Faq /> */}
       <Element name="contact">

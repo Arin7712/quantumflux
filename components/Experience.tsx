@@ -39,15 +39,38 @@ const Experience = () => {
               <Image src="/logo.png" alt="logo" width={150} height={80} />
             </span>
           </div>
-          <Image src="/card1.jpg" alt="t1" width={270} height={450} className="w-[500px] h-[250px]  md:hidden block rounded-lg"/>
-          <Image src="/t3.jpg" alt="t1" width={270} height={450} className=" md:block hidden"/>
+          <Image
+            src="/card1.jpg"
+            alt="t1"
+            width={270}
+            height={450}
+            className="w-[500px] h-[250px]  md:hidden block rounded-lg"
+          />
+          <Image
+            src="/t3.jpg"
+            alt="t1"
+            width={270}
+            height={450}
+            className=" md:block hidden"
+          />
         </div>
 
         <div className="flex md:flex-row flex-col ">
-          <Image src="/t4.png" alt="t1" width={270} height={450} className="w-[500px] md:hidden block"/>
-          <Image src="/t2.png" alt="t1" width={270} height={450} className=" md:block hidden"/>
+          <Image
+            src="/t4.png"
+            alt="t1"
+            width={270}
+            height={450}
+            className="w-[500px] md:hidden block"
+          />
+          <Image
+            src="/t2.png"
+            alt="t1"
+            width={270}
+            height={450}
+            className=" md:block hidden"
+          />
           <div className="bg-[url('/bg.webp')] bg-no-repeat bg-cover relative md:w-[300px] w-full md:order-1 order-[-1] h-[200px] md:h-[462px] rounded-lg flex flex-row md:flex-col items-center justify-between px-4 py-6 overflow-hidden">
-
             <div className="text-center text-md nd:text-xl relative">
               MD, Global <br></br>Daniel Nuts
             </div>

@@ -50,11 +50,18 @@ const Contact = () => {
         <div className="flex md:gap-[8rem] gap-6 items-center">
           <div>
             <h1 className="text-sm text-neutral-400">Phone</h1>
-            <a className="md:text-sm text-xs" href="tel:+7066040014">+91-7066040014</a>
+            <a className="md:text-sm text-xs" href="tel:+7066040014">
+              +91-7066040014
+            </a>
           </div>
           <div>
             <h1 className="text-sm text-neutral-400">Email</h1>
-            <a href="mailto:quantumfluxtechnology@gmail.com" className="md:text-sm text-xs">quantumfluxtechnology@gmail.com</a>
+            <a
+              href="mailto:quantumfluxtechnology@gmail.com"
+              className="md:text-sm text-xs"
+            >
+              quantumfluxtechnology@gmail.com
+            </a>
           </div>
           <div>
             <h1 className="text-sm text-neutral-400">Address</h1>
@@ -108,35 +115,32 @@ const Contact = () => {
         </div>
       </div>
       <div className="relative md:flex-1 flex justify-between flex-col rounded-xl p-6 md:w-auto w-full md:h-auto h-[20rem] overflow-hidden bg-[url('/bg.webp')] bg-no-repeat bg-cover">
-
         <div className="relative">
           <Image src="/logo.png" alt="logo" width={200} height={80} />
         </div>
         <div className="flex flex-col gap-4 items-end relative">
           <p>Quickest Contact With Us</p>
           <ul className="flex gap-6">
-          <Link href='https://www.instagram.com/quantumfluxtechnology?igsh=MWFlaGNic3F1MWN0bQ=='>
-                    <li className='hover:cursor-pointer'>
-                    <Image
-                    src='/instagram.svg'
-                    alt='instagram'
-                    width={20}
-                    height={20}
-                    />
-                    </li>
-                  </Link>
-                                <Link href='https://www.linkedin.com/company/quantumflux-technology-pvt-ltd/about/'>
-
-                    <li className='hover:cursor-pointer'>
-                    <Image
-                    src='/linkedin.svg'
-                    alt='instagram'
-                    width={20}
-                    height={20}
-                    />
-                    </li>
-                  </Link>
-          
+            <Link href="https://www.instagram.com/quantumfluxtechnology?igsh=MWFlaGNic3F1MWN0bQ==">
+              <li className="hover:cursor-pointer">
+                <Image
+                  src="/instagram.svg"
+                  alt="instagram"
+                  width={20}
+                  height={20}
+                />
+              </li>
+            </Link>
+            <Link href="https://www.linkedin.com/company/quantumflux-technology-pvt-ltd/about/">
+              <li className="hover:cursor-pointer">
+                <Image
+                  src="/linkedin.svg"
+                  alt="instagram"
+                  width={20}
+                  height={20}
+                />
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
